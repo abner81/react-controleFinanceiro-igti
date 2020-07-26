@@ -47,4 +47,8 @@ export const InputFilter = styled.input`
          border: none;
          border-bottom: 1px solid lightgray;
          background: none;
+
+         ::before {
+           outline: none;
+         }
        `;

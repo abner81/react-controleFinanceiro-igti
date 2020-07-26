@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import { Button } from 'react-bootstrap'
 import { Pencil } from "@styled-icons/boxicons-solid/Pencil";
 import { Delete } from "@styled-icons/material/Delete";
 
@@ -18,6 +19,7 @@ export const ListWrapper = styled.section`
 export const ListDay = styled.h3`
   font-size: 1.7rem;
   font-weight: 600;
+  color: black;
 `;
 
 export const ListInfoDiv = styled.div`
@@ -59,10 +61,17 @@ export const ListIconPencil = styled(Pencil)`
   margin-right: 8px;
 `;
 
-export const ListButtonModal = styled.button`
+export const ListButtonModal = styled(Button)`
          background: none;
          border: none;
          text-decoration: none;
+
+         :hover {
+           background: none;
+           border: none;
+           text-decoration: none;
+           outline: none;
+         }
 
          :focus {
            background: none;
@@ -99,6 +108,7 @@ export const ModalButtonClose = styled.button`
 export const ModalBodyWrapper = styled.div`
 `;
 
+
 export const ModalDivInputs = styled.div`
   display: flex;
   flex-direction: column;
@@ -114,4 +124,14 @@ export const ModalInput = styled.input`
   width: 30%;
   border: none;
   border-bottom: 1px solid lightgray;
+`;
+
+export const P = styled.p`
+  color: #bf1650;
+  margin-top: 6px;
+
+  ::before {
+    display: inline;
+    content: "⚠ ";
+  }
 `;

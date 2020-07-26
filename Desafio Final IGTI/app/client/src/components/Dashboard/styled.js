@@ -14,23 +14,24 @@ export const DashboardWrapper = styled.section`
 `;
 
 export const DashboardCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-right: 15px;
-  min-width: 25%;
-  min-height: 120px;
-  background: ${(props) => (props.background ? "#2A9D8F" : "white")};
-  padding: 10px 10px 10px 20px;
-  box-shadow: 6px 4px 10px rgba(166, 170, 200, 0.25);
-  border-radius: 5px;
-`;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         margin-right: 15px;
+         min-width: 25%;
+         min-height: 120px;
+         background: ${(props) =>
+           props.background ? props.background : "#f47859"};
+         padding: 10px 10px 10px 20px;
+         box-shadow: 6px 4px 10px rgba(166, 170, 200, 0.25);
+         border-radius: 5px;
+       `;
 
 export const DashboardCardTitle = styled.h5`
   font-size: 1.2rem;
   font-weight: 600;
-  color: ${(props) => (props.background ? "white" : "#595959")};
+  color: ${(props) => (props.background === "white" ? "#595959" : 'white')};
 `;
 
 export const DashboardDivTitle = styled.div`
@@ -38,7 +39,7 @@ export const DashboardDivTitle = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-`
+`;
 
 export const IconNumber = styled(Numbers)`
   width: 20px;

@@ -35,7 +35,7 @@ export const DivInputs = styled.div`
   }
 `;
 
-export const InputWrapper = styled.form`
+export const InputWrapper = styled.div`
   width: 100%;
   margin: 30px auto;
   padding: 10px 10px;
@@ -62,3 +62,8 @@ export const SubmitDiv = styled.div`
   justify-content: flex-end;
   margin-top: 15px;
 `;
+
+export const HookInput= styled.input`
+  margin-bottom: 15px;
+`
+
